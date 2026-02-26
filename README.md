@@ -54,4 +54,4 @@ Form validation prevents submission of invalid input and provides immediate user
 
 This project is deployed on GitHub Pages:
 
-👉 **[Live Demo](ADD_LINK_HERE)**
+👉 **[Live Demo](https://zephyrd18.github.io/se_project_todo-app/)**
