@@ -76,7 +76,6 @@ export default class FormValidator {
       this._hideInputError(inputElement);
     });
 
-    this._submitButton.disabled = true;
-    this._submitButton.classList.add(this._settings.inactiveButtonClass);
+    this._toggleButtonState();
   }
 }

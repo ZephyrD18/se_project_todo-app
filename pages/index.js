@@ -30,8 +30,12 @@ function generateTodo(data) {
   return todo.getView();
 }
 
-const addTodoFormValidator = new FormValidator(validationConfig, addTodoForm);
+function renderTodo(item) {
+  const todoElement = generateTodo(item);
+  todosList.append(todoElement);
+}
 
+const addTodoFormValidator = new FormValidator(validationConfig, addTodoForm);
 addTodoFormValidator.enableValidation();
 
 addTodoButton.addEventListener("click", () => {
@@ -58,15 +62,10 @@ addTodoForm.addEventListener("submit", (evt) => {
     completed: false,
   };
 
-  const todo = generateTodo(values);
-  todosList.append(todo);
+  renderTodo(values);
 
   addTodoFormValidator.resetValidation();
-
   closeModal(addTodoPopup);
 });
 
-initialTodos.forEach((item) => {
-  const todo = generateTodo(item);
-  todosList.append(todo);
-});
+initialTodos.forEach(renderTodo);
