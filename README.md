@@ -1,17 +1,57 @@
-# Simple Todo App
+# Simple ToDo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+A clean, modular ToDo application built with vanilla JavaScript using ES6 modules and Object-Oriented Programming principles. Users can create tasks, optionally assign due dates, and manage completion status in a responsive and user-friendly interface.
+
+---
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+This application allows users to:
 
-## Technology
+- Add new to-do items
+- Assign optional due dates
+- Mark tasks as completed
+- Delete tasks
+- Validate form input with real-time feedback
+- Generate unique IDs for new tasks using the `uuid` package
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+The app dynamically renders tasks from a `<template>` element and maintains clean separation of logic using reusable classes.
+
+Form validation prevents submission of invalid input and provides immediate user feedback. After successful submission, the form resets and disables the submit button to maintain proper UX behavior.
+
+---
+
+## Technology & Techniques
+
+### JavaScript (ES6+)
+
+- ES6 Modules (`import` / `export`)
+- Classes and Object-Oriented Programming
+- Private and public class methods
+- DOM manipulation
+- Event handling
+
+### External Package
+
+- `uuid` (imported via CDN) for generating unique IDs
+
+### 🏗 Architecture
+
+- `Todo` class — responsible for rendering and managing individual to-do items
+- `FormValidator` class — handles form validation logic
+- `constants.js` — centralized configuration and initial data
+- Modular file structure for scalability and maintainability
+
+### Frontend
+
+- Semantic HTML
+- CSS styling
+- Template cloning for dynamic UI rendering
+
+---
 
 ## Deployment
 
 This project is deployed on GitHub Pages:
 
-- ADD LINK HERE
+👉 **[Live Demo](ADD_LINK_HERE)**
