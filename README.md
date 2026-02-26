@@ -35,7 +35,7 @@ Form validation prevents submission of invalid input and provides immediate user
 
 - `uuid` (imported via CDN) for generating unique IDs
 
-### 🏗 Architecture
+### Architecture
 
 - `Todo` class — responsible for rendering and managing individual to-do items
 - `FormValidator` class — handles form validation logic
